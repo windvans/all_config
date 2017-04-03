@@ -3,6 +3,7 @@
 	" general
 	" gui-settings
 	" keymappings
+    " plug install
 	" auto-commands
 
 
@@ -28,7 +29,9 @@ set noswapfile
 
 " gui-settings
 
-set guifont=Inconsolata:h20
+set macligatures
+set guifont=Fira\ Code:h20
+
 set t_CO=256
 
 set guioptions-=l
@@ -48,6 +51,9 @@ hi split  guifg=bg guibg=bg
 set splitbelow
 set splitright
 
+set laststatus=2
+let g:airline_theme="light" 
+let g:airline_powerline_fonts = 1   
 
 " keymappings
 
@@ -56,6 +62,7 @@ let mapleader=','
 map <Leader><space> :nohlsearch<cr>
 
 nmap <Leader>ev :edit $MYVIMRC<cr>
+nmap <Leader>n :tabnew<cr>
 nmap <Leader>[ :tabnext<cr>
 nmap <Leader>] :tabprevious<cr>
 nmap <Leader>w :tabclose<cr>
@@ -69,6 +76,28 @@ nmap <C-l> <C-w><C-l>
 
 nmap j jzz
 nmap k kzz
+
+" keybinding for plugins
+"
+" NERDTREE
+nmap <C-b> :NERDTreeToggle<cr>
+
+
+" plug install 
+" use junegunn/vim-plug for management
+
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+Plug 'junegunn/vim-easy-align'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
+Plug 'moll/vim-node'
+
+" Initialize plugin system
+call plug#end()
 
 " auto-commands
 
