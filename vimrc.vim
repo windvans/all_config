@@ -29,7 +29,6 @@ set noswapfile
 
 " gui-settings
 
-set macligatures
 set guifont=Fira\ Code:h20
 
 set t_CO=256
@@ -95,6 +94,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'moll/vim-node'
+Plug 'python-mode/python-mode'
+Plug 'plasticboy/vim-markdown'
 
 " Initialize plugin system
 call plug#end()
