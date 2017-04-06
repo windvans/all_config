@@ -29,7 +29,11 @@ set noswapfile
 
 " gui-settings
 
+<<<<<<< HEAD
 set guifont=Fira\ Code:h20
+=======
+set guifont=Hack:h20
+>>>>>>> master
 
 set t_CO=256
 
