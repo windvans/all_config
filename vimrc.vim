@@ -29,8 +29,7 @@ set noswapfile
 
 " gui-settings
 
-set macligatures
-set guifont=Fira\ Code:h20
+set guifont=Hack:h20
 
 set t_CO=256
 
