@@ -3,7 +3,7 @@
 	" general
 	" gui-settings
 	" keymappings
-    " plug install
+  " plug install
 	" auto-commands
 
 
@@ -27,6 +27,7 @@ set softtabstop=2
 set expandtab
 set noswapfile
 set nofoldenable
+
 let g:vim_markdown_folding_style_pythonic = 1
 
 " gui-settings
@@ -55,6 +56,7 @@ set splitright
 set laststatus=2
 let g:airline_theme="light" 
 let g:airline_powerline_fonts = 1   
+let g:user_emmet_leader_key='<c-e>'
 
 " keymappings
 
@@ -83,7 +85,6 @@ nmap k kzz
 " NERDTREE
 nmap <C-b> :NERDTreeToggle<cr>
 
-
 " plug install 
 " use junegunn/vim-plug for management
 
@@ -100,6 +101,7 @@ Plug 'python-mode/python-mode'
 Plug 'plasticboy/vim-markdown'
 Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-haml'
+Plug 'mattn/emmet-vim'
 
 " Initialize plugin system
 call plug#end()
