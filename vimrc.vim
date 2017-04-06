@@ -96,6 +96,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'moll/vim-node'
 Plug 'python-mode/python-mode'
 Plug 'plasticboy/vim-markdown'
+Plug 'leafgarland/typescript-vim'
+Plug 'tpope/vim-haml'
 
 " Initialize plugin system
 call plug#end()
