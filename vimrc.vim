@@ -31,7 +31,7 @@ let g:vim_markdown_folding_style_pythonic = 1
 
 " gui-settings
 
-set guifont=Fira\ Code:h20
+set guifont=Hack:h20
 
 set t_CO=256
 
@@ -98,6 +98,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'moll/vim-node'
 Plug 'python-mode/python-mode'
 Plug 'plasticboy/vim-markdown'
+Plug 'leafgarland/typescript-vim'
+Plug 'tpope/vim-haml'
 
 " Initialize plugin system
 call plug#end()
