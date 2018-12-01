@@ -1,10 +1,10 @@
 " vimrc in one file
 " contents-menus
-	" general
-	" gui-settings
-	" keymappings
-  " plug install
-	" auto-commands
+    " general
+    " gui-settings
+    " keymappings
+    " plug install
+    " auto-commands
 
 
 " general
@@ -70,6 +70,6 @@ nmap k kzz
 " auto-commands
 
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost $MYVIMRC source % 
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source % 
 augroup END
