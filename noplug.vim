@@ -1,11 +1,5 @@
 " vimrc in one file
 " contents-menus
-    " general
-    " gui-settings
-    " keymappings
-    " plug install
-    " auto-commands
-
 
 " general
 
