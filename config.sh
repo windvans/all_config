@@ -1,6 +1,6 @@
 #! /bin/sh
 
-cp ./noplug.vim ~/.vimrc
+cp ./no_plug.vim ~/.vimrc
 echo "vim config complete"
 
 cp ./tmux.conf ~/.tmux.conf

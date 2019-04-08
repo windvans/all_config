@@ -30,7 +30,6 @@ set guioptions-=e
 set guioptions-=m
 set guioptions-=T
 
-set foldcolumn=2
 hi foldcolumn guibg=bg
 
 set guifont=Hack:h20
