@@ -106,7 +106,6 @@ alias l="ls -al"
 alias v="vim"
 alias ghidra='~/Application/ghidra_9.0/ghidraRun'
 
-
 # PATH setting
 
 export JAVA_HOME=~/Application/jdk-11.0.2
