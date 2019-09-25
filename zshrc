@@ -104,11 +104,3 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias c="clear"
 alias l="ls -al"
 alias v="vim"
-alias ghidra='~/Application/ghidra_9.0/ghidraRun'
-
-# PATH setting
-
-export JAVA_HOME=~/Application/jdk-11.0.2
-export JRE_HOME=$JAVA_HOME/jre
-export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
-export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
