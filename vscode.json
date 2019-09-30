@@ -44,5 +44,5 @@
     "editor.defaultFormatter": "HookyQR.beautify"
   },
   "workbench.settings.editor": "json",
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.shell.osx": "/bin/zsh"
 }
