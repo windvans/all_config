@@ -1,18 +1,9 @@
 " vimrc in one file
-" contents-menus
-	" general
-	" gui-settings
-	" keymappings
-  " plug install
-	" auto-commands
-
-
 " general
 
 set nu
 set relativenumber
 syntax enable
-colorscheme  desert
 set backspace=indent,eol,start
 set hlsearch
 set incsearch
@@ -21,20 +12,16 @@ set smartindent
 set showmatch
 set smartcase
 set showtabline=1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set noswapfile
 set nofoldenable
-
-let g:vim_markdown_folding_style_pythonic = 1
-
-" gui-settings
-
-set guifont=Hack:h20
-
 set t_CO=256
+colorscheme one
+set background=dark " for the dark version
+" set background=light " for the light version
 
 set guioptions-=l
 set guioptions-=L
@@ -44,19 +31,16 @@ set guioptions-=e
 set guioptions-=m
 set guioptions-=T
 
-" set foldcolumn=2
-" hi foldcolumn guibg=bg
+hi foldcolumn guibg=bg
+
+set guifont=Hack:h20
+set t_CO=258
 
 hi vertsplit  guifg=bg guibg=bg
 hi split  guifg=bg guibg=bg
 
 set splitbelow
 set splitright
-
-set laststatus=2
-let g:airline_theme="light" 
-let g:airline_powerline_fonts = 1   
-let g:user_emmet_leader_key='<c-e>'
 
 " keymappings
 
@@ -80,35 +64,32 @@ nmap <C-l> <C-w><C-l>
 nmap j jzz
 nmap k kzz
 
-" keybinding for plugins
-"
-" NERDTREE
-nmap <C-b> :NERDTreeToggle<cr>
-
-" plug install 
-" use junegunn/vim-plug for management
-
-" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+" use vim-plug manager
 call plug#begin('~/.vim/plugged')
 
-" Make sure you use single quotes
-Plug 'junegunn/vim-easy-align'
+Plug 'wakatime/vim-wakatime'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree'
-Plug 'moll/vim-node'
-Plug 'python-mode/python-mode'
-Plug 'plasticboy/vim-markdown'
-Plug 'leafgarland/typescript-vim'
-Plug 'tpope/vim-haml'
-Plug 'mattn/emmet-vim'
+let g:airline_theme='one'
+Plug 'rakr/vim-one'
 
-" Initialize plugin system
 call plug#end()
+
+" settings for python
+let python_highlight_all=1
+au Filetype python set tabstop=4
+au Filetype python set softtabstop=4
+au Filetype python set shiftwidth=4
+au Filetype python set textwidth=79
+au Filetype python set expandtab
+au Filetype python set autoindent
+au Filetype python set fileformat=unix
+autocmd Filetype python set foldmethod=indent
+autocmd Filetype python set foldlevel=99
 
 " auto-commands
 
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost $MYVIMRC source % 
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source % 
 augroup END
